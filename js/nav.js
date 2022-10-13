@@ -18,7 +18,13 @@ class="d-inline-block align-text-top"></a>
       <a class="nav-link active" aria-current="page" href="#combos">Nuestras bebidas</a>
     </li>
     <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#carrito">Carrito</a>
+      <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="https://github.com/marina-baiardi">Mi GitHub</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link active cta" aria-current="page" data-pushbar-target="pushbar-menu" href="#">Carrito</a>
   </li>
   </ul>
 </div>

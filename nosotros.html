@@ -20,114 +20,56 @@
     </header>
 
      <!--Seccion 1-->
-     <section class="container card-banner" style="max-width: 100%;">
+     <div class="card-banner" style="max-width: 100%;">
         <div class="row g-0">
           <div class="col-md-6">
             <div class="card-body">
-              <h5 class="card-title">¡Encontra las mejores bebidas en nuestra web!</h5>
-              <p class="card-text">Tenemos envios en la zona a solo $150.</p>
-              <a type="button" href="./formenvios.html" class="btn-luminoso" style="margin-left: 150px;">Pedir a domicilio</a>
+              <h5 class="card-title">¡Tenemos la mejor variedad de bebidas!</h5>
             </div>
           </div>
           <div class="col-md-6">
-            <img src="./img/Gentehaciendounbrindis.jpg" class="img-fluid" width="100%" alt="...">
-          </div>
-        </div>
-     </section>
-         <!--Seccion 2-->
-    <section class="container card-banner mb-3" style="max-width: 100%;">
-      <div class="row g-0">
-        <div class="col-md-6">
-          <img src="./img/botellas.jpg" class="img-fluid" width="100%" alt="...">
-        </div>
-        <div class="col-md-6">
-          <div class="card-body">
-            <h5 class="card-title">¿Lo querés? Lo tenemos!</h5>
-            <p class="card-text">Tinto, hay. Whisky? Tenemos. Hasta ese Vodka explosivo probaste en un bar, También.</p>
+            <img src="./img/alcohol02.jpg" class="img-fluid" width="100%" alt="...">
           </div>
         </div>
       </div>
-    </section>
-    <!--Seccion bebidas-->
-    <section class="container mt-5">
-        <h1 id="combos">Nuestras bebidas</h1>
-        <hr>
-        <!--Tarjetas de las bebidas generadas por JS-->
-        <div class="row bebidas" id="cards"></div>
-
-      
-    </section>
-    <!--Seccion de abajo del carrito-->
-    <template id="template-footer">
-        <th scope="row" colspan="2">Total productos</th>
-        <td>10</td>
-        <td>
-            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
-                Borrar
-            </button>
-            <a class="btn btn-morado btn-sm" href="/formenvios.html" id="vaciar-carrito">
-                Pedir envio
-            </a>
-        </td>
-        <td class="font-weight-bold">$ <span>5000</span></td>
-    </template>
-    <!--Seccion tabla del carrito-->
-    <template id="template-carrito">
-        <tr>
-            <th scope="row">id</th>
-            <td>Bebida</td>
-            <td>1</td>
-            <td>
-                <button class="btn btn-info btn-sm">
-                    +
-                </button>
-                <button class="btn btn-danger btn-sm">
-                    -
-                </button>
-            </td>
-            <td>$<span>500</span></td>
-        </tr>
-    </template>
-    <!--Estructura de las tarjeta de bebidas-->
-    <template id="template-card">
-        <div class="col-12 mb-2 col-md-4">
-            <div class="card">
-                <img id="image" src="" alt="" class="img-card-top">
-                <div class="card-body">
-                  <h5 id="type">Tipo</h5>
-                    <h5 id="title">Titulo</h5>
-                    <p id="price">$</p>
-                    <button class="btn-luminoso btn-cart">Comprar</button>
+    <!--Acordeon-->
+    <section class="row">
+        <div class="col-md-12">
+    <div class="acordeon">
+        <div class="bloque activo">
+            <h2 class="h2">Espirituosas <img src="img/iconmonstr-party-13-72.png" width="40"></h2>
+            <p class="contenido">Tenemos diferentes bebidas espirituosas con contenido alcohólico
+                 procedentes de la destilación de materias primas agrícolas 
+                 (uva, cereales, frutos secos, remolacha, caña, fruta, etc.). Productos como el 
+                 brandy, el whisky, el ron, la ginebra, el vodka, o los licores, entre otros.
+                </p>
                 
-                </div>
-            </div>
         </div>
-    </template>
-    <!--Modal Carrito-->
-    <div class="modal-container">
-        <div class="modal modal-close">
-            <button class="btn-morado close">Cerrar</button>
-              <!--Tabla carrito-->
-     <table id="carrito" class="table">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Item</th>
-                <th scope="col">Cantidad</th>
-                <th scope="col">Accion</th>
-                <th scope="col">Total</th>
-            </tr>
-        </thead>
-        <tbody id="items"></tbody>
-        <tfoot>
-        <tr id="footer">
-            <th scope="row" colspan="5">Carrito vacio - comienze a comprar!</th>
-        </tr>
-        </tfoot>
-    </table>
+        <div class="bloque">
+            <h2 class="h2">Aperitivos <img src="img/iconmonstr-beer-8-72.png" width="40"></h2>
+            <p class="contenido">Se denomina aperitivos a algunas bebidas espirituosas con 
+                principios amargos obtenidas por destilación o por maceración de hierbas 
+                en alcohol que, sin embargo, pueden contener vino o no, que se beben en una
+                 forma de ritual antes de las comidas para abrir el apetito.</p>
+        </div>
+        <div class="bloque">
+            <h2 for="" class="h2">Cervezas <img src="img/iconmonstr-beer-3-72.png" width="40"></h2>
+            <p class="contenido">Bebida alcohólica obtenida mediante fermentación de un mosto
+                 dulce, a base de cereales germinados (principalmente cebada), con la 
+                 adición de lúpulo. Mientras que en algunas regiones se utiliza un cierto
+                  porcentaje de maíz y arroz.</p>
+        </div>
+        <div class="bloque">
+            <h2 class="h2">Vinos <img src="img/iconmonstr-beer-8-72.png" width="40"></h2>
+            <p class="contenido">El vino es, exclusivamente, la bebida resultante de 
+                la fermentación alcohólica, completa o parcial, de uvas frescas, 
+                estrujadas o no, o de mosto de uva. Su contenido en alcohol adquirido 
+                no puede ser inferior a 8,5% vol.</p>
         </div>
     </div>
-   <!--Fin Modal Carrito-->
+    </div>
+    </section>
+
    <!--Footer web-->
     <footer>    
       <div class="container-footer-all">
@@ -174,6 +116,7 @@
    </footer>
    <!--Fin del footer-->
     <!--Script JS-->
+    <script src="./js/acordion.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/modal.js"></script>
